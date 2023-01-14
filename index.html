@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: 	#00BFFF;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+/* flex container*/
+.flex-container {
+  display: flex;
+  background-color: Szary;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-container > div {
+  background-color: transparent;
+  margin: 20px;
+  padding: 15px 25px;
+  font-size: 40px;
+  align-items: stretch;
+  width: 600px;
+  padding: 15px 25px;
+}
+
+/*Linki*/
+
+a:link, a:visited {
+  background-color: #ccc;
+  color: black;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: #00BFFF;
+ }
+
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Kraków miasto STUDENTÓW</h1>
+  <img src="https://ocdn.eu/pulscms-transforms/1/gS8k9kpTURBXy9jOGNhMmVjNjJlMTg4ZDQzNzQyZTBlMzBmOGI1ZGNiOC5qcGeRkwLNA0gAgqEwAaExAQ" alt="Widokówka" style="max-width:35%;height:auto;">
+</header>
+<section>
+  <nav>
+    <ul>
+      <li><a href="https://www.otouczelnie.pl/miasto/uczelnie-krakow">Lista uczelni</a></li>
+	  <li><a href="http://www.e-krakow.com/e-krakow/Akademiki">Akademiki w Krakowie</a></li>
+      <li><a href="https://www.mpk.krakow.pl/">Komunikacja</a></li>
+    </ul>
+  </nav>
+  <article>
+    <p>KRAKÓW to miasto królów i dawna stolica Polski</p>
+    <p>To miasto z historią, miasto kultury, młodych ludzi, których stolica Małopolski wabi swoimi atrakcjami.</p>
+	<p>Zanim poznacie każdy krakowski zakątek, w MENU po lewej stronie kilka pomocnych informacji na start.</p>
+  </article> 
+ </section>
+
+<footer>
+	<div class="flex-container">
+		<div>
+		<a href="kontakt/index.html">Kontakt</a>
+		</div>
+		<div>
+		<a href="mapa/index.html">Mapa</a>
+		</div>  
+		<div>
+		<a href="adres/index.html">Adres</a>
+		</div>
+		
+	</div>
+ 
+</footer>
+
+
+  
+
+</body>
+</html>
+
